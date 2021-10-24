@@ -8,8 +8,8 @@ FPS = 60
 # color
 #         R    G    B
 WHITE = (255, 255, 255)
-RED =   (255,   0,   0)
-GRAY =  (192, 192, 192)
+RED   = (255,   0,   0)
+GRAY  = (192, 192, 192)
 
 
 def loadGameInterface(screen, cfg, level_next=1):
@@ -18,8 +18,7 @@ def loadGameInterface(screen, cfg, level_next=1):
     background_img = pygame.image.load(cfg.OTHER_IMAGE_PATHS.get('background'))
 
     # logo
-    logo_img = pygame.transform.scale(pygame.image.load(
-        cfg.OTHER_IMAGE_PATHS.get('logo')), (446, 70))
+    logo_img = pygame.transform.scale(pygame.image.load(cfg.OTHER_IMAGE_PATHS.get('logo')), (446, 70))
     logo_rect = logo_img.get_rect()
     logo_rect.centerx, logo_rect.centery = cfg.WIDTH//2, cfg.HEIGHT//4
 
@@ -28,8 +27,7 @@ def loadGameInterface(screen, cfg, level_next=1):
     font = pygame.font.Font(cfg.FONTPATH, cfg.WIDTH//20)
 
     # noti loading game
-    text = font.render(
-        'Loading game data, You will enter Level-%s' % level_next, True, WHITE)
+    text = font.render('Loading game data, You will enter Level-%s' % level_next, True, WHITE)
     text_rect = text.get_rect()
     text_rect.centerx, text_rect.centery = cfg.WIDTH/2, cfg.HEIGHT/2
 
@@ -54,10 +52,6 @@ def loadGameInterface(screen, cfg, level_next=1):
                 if event.key == K_ESCAPE:
                     pygame.quit()
                     sys.exit()
-                elif event.key == K_RETURN:
-                    return is_dual_mode
-                elif event.key == K_UP or event.key == K_DOWN or event.key == K_w == event.key == K_s:
-                    is_dual_mode = not is_dual_mode
         if load_time_left <= 0: return
         screen.blit(background_img, (0, 0))
         screen.blit(logo_img, logo_rect)
