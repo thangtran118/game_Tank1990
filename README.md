@@ -1,5 +1,5 @@
 # Introduction
-https://mp.weixin.qq.com/s/1xXULpT36P7LTO5HDbjptg
+ThangTran
 
 # Environment
 ```
@@ -9,10 +9,8 @@ Python: Python3.5+(have installed necessary dependencies)
 
 # Usage
 ```
-Step1:
-pip install -r requirements.txt
-Step2:
-run "python Game5.py"
+Step1: pip3 install -r requirements.txt
+Step2: python3 main.py
 ```
 
 # Game Display
