@@ -8,7 +8,7 @@ def main():
     screen = pygame.display.set_mode((cfg.WIDTH, cfg.HEIGHT))
     pygame.display.set_caption(cfg.TITLE)
     # is_dual_mode = startInterface(screen, cfg)
-    loadGameInterface(screen, cfg, 1)
+    endInterface(screen, cfg)
     
 # run
 if __name__ == '__main__':
