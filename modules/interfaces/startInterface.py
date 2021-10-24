@@ -2,11 +2,22 @@ import pygame
 import sys
 from itertools import cycle
 from pygame.locals import *
-from .variables import *
 
 BLINK_EVENT = pygame.USEREVENT + 0
 
+FPS = 60
+
+# color
+#         R    G    B
+WHITE = (255, 255, 255)
+RED   = (255,   0,   0)
+GRAY  = (192, 192, 192)
+
 def startInterface(screen, cfg):
+
+    #background
+    background_img = pygame.image.load(cfg.OTHER_IMAGE_PATHS.get('background'))
+
     # logo 
     logo_img = pygame.transform.scale(pygame.image.load(cfg.OTHER_IMAGE_PATHS.get('logo')), (446, 70))
     logo_rect = logo_img.get_rect()
@@ -15,6 +26,8 @@ def startInterface(screen, cfg):
     # tank cursor
     tank_cursor = pygame.image.load(cfg.PLAYER_TANK_IMAGE_PATHS.get('player1')[0]).convert_alpha().subsurface((0, 144), (48, 48))
     tank_rect = tank_cursor.get_rect()
+    
+    #font
     font = pygame.font.Font(cfg.FONTPATH, cfg.WIDTH//12)
 
     # user's choice
@@ -30,6 +43,7 @@ def startInterface(screen, cfg):
     # blink text : " press ... " 
     # I copied it in stackoverflow
     # But I don't understand how to do that
+    
     game_tip = font.render('press <Enter> to start', True, WHITE)
     game_tip_rect = game_tip.get_rect()
     game_tip_rect.centerx, game_tip_rect.top = cfg.WIDTH/2, cfg.HEIGHT/1.4
