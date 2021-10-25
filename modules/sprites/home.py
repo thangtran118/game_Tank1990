@@ -3,9 +3,9 @@ import pygame
 # căn cứ - home
 
 class Home(pygame.sprite.Sprite):
-    def __init__(self, position, image_paths ,**kwargs):
+    def __init__(self, position, imagepaths ,**kwargs):
         pygame.sprite.Sprite.__init__(self)
-        self.imagepaths = image_paths
+        self.imagepaths = imagepaths
         self.image = pygame.image.load(self.imagepaths[0])
         self.rect = self.image.get_rect()
         self.rect.left, self.rect.top = position
