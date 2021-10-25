@@ -9,8 +9,8 @@ Python: Python3.5+(have installed necessary dependencies)
 
 # Usage
 ```
-Step1: pip3 install -r requirements.txt
-Step2: python3 main.py
+pip3 install -r requirements.txt
+python3 main.py
 ```
 
 # Game Display
