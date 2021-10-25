@@ -1,9 +1,16 @@
 """
-Chưa làm được / Bugs
-1. Thiếu comment
+Chưa làm được/Thiếu
+1. Comment
+2, Chọn level
+3. Hướng dẫn chơi chi tiết
+"""
+"""
+Bugs
+1. Bug: lối khi dùng unikey
 2. Bug: đường đạn chưa chuẩn
 3. Bug: Item xuất hiện đè lên secnes
-
+4. Bug: con bot hơi "ngu"
+5. 
 """
 
 import config as cfg
