@@ -4,6 +4,7 @@ import pygame
 
 class Home(pygame.sprite.Sprite):
     def __init__(self, position, image_paths ,**kwargs):
+        pygame.sprite.Sprite.__init__(self)
         self.imagepaths = image_paths
         self.image = pygame.image.load(self.imagepaths[0])
         self.rect = self.image.get_rect()
