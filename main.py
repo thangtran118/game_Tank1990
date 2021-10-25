@@ -1,3 +1,11 @@
+"""
+Chưa làm được / Bugs
+1. Thiếu comment
+2. Bug: đường đạn chưa chuẩn
+3. Bug: Item xuất hiện đè lên secnes
+
+"""
+
 import config as cfg
 import pygame
 from modules import *
