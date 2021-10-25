@@ -3,7 +3,7 @@ ThangTran
 
 # Environment
 ```
-OS: Windows10
+OS: Macos BigSur 11.5.4
 Python: Python3.5+(have installed necessary dependencies)
 ```
 
