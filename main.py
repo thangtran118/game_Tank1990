@@ -25,7 +25,7 @@ def main():
     sounds = {}
     for key, value in cfg.AUDIO_PATHS.items():
         sounds[key] = pygame.mixer.Sound(value)
-        sounds[key].set_volume(1)
+        sounds[key].set_volume(0)
     is_dual_mode = startInterface(screen, cfg)
     levelfilepaths = cfg.LEVELFILEPATHS
     for idx, levelfilepath in enumerate(levelfilepaths):
