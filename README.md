@@ -14,4 +14,4 @@ python3 main.py
 ```
 
 # Game Display
-<!-- ![giphy](demonstration/running.gif) -->
+![giphy](./assets/demo/demo.gif)
