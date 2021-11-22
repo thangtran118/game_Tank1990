@@ -8,7 +8,7 @@
         + nhìn nó tức
         + nên sửa lại đường dẫn tương đối nha 
 '''
-import os
+import glob
 
 # font
 FONTPATH = './assets/font/font.ttf'
@@ -117,7 +117,7 @@ TITLE = 'Tank-1990'
 
 #level
 LEVELFILEDIR = './modules/levels'
-LEVELFILEPATHS = [os.path.join(LEVELFILEDIR, filename) for filename in sorted(os.listdir(LEVELFILEDIR))]
+LEVELFILEPATHS = glob.glob("./modules/levels/*.lvl")
 
 # import os
 
