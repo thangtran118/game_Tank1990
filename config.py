@@ -116,7 +116,7 @@ PANEL_WIDTH = 150
 TITLE = 'Tank-1990'
 
 #level
-LEVELFILEDIR = './modules/levels'
+# LEVELFILEDIR = './modules/levels'
 LEVELFILEPATHS = glob.glob("./modules/levels/*.lvl")
 
 # import os
