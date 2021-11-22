@@ -4,7 +4,7 @@ ThangTran
 # Environment
 ```
 OS: Macos BigSur 11.5.4
-Python: Python3.5+(have installed necessary dependencies)
+Python: Python3+(have installed necessary dependencies)
 ```
 
 # Usage
